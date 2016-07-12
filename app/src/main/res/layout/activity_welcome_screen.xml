@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.WelcomeScreen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/iitplogo2"
+            android:id="@+id/iitp_logo"
+            android:layout_gravity="center_horizontal|top"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presents"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:id="@+id/presents"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="135dp"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/logo"
+            android:id="@+id/anwesha_logo"
+            android:layout_marginTop="135dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="40dp"
+            android:layout_marginTop="400dp"
+            android:id="@+id/tdl"
+            android:layout_gravity="center_horizontal"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="40dp"
+            android:layout_marginTop="460dp"
+            android:id="@+id/anwesha_text"
+            android:layout_gravity="center_horizontal"
+            android:text="Anwesha 2017"
+            />
+
+
+
+    </FrameLayout>
+</RelativeLayout>

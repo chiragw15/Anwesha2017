@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cc15.anwesha2017">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".activities.WelcomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activities.RegistrationActivity" />
+        <activity
+            android:name=".activities.About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".activities.Home"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cc15.anwesha2017.activities.Home" />
+        </activity>
+        <activity
+            android:name=".activities.Sponsors"
+            android:label="@string/title_activity_sponsors"
+            android:parentActivityName=".activities.Home"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cc15.anwesha2017.activities.Home" />
+        </activity>
+        <activity
+            android:name=".activities.Team"
+            android:label="@string/title_activity_team"
+            android:parentActivityName=".activities.Home"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cc15.anwesha2017.activities.Home" />
+        </activity>
+        <activity android:name=".activities.EventsCategory"></activity>
+    </application>
+
+</manifest>

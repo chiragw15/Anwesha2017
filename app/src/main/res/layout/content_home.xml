@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment"
+        android:name="com.example.cc15.anwesha2017.fragments.HomeActivityFragment"
+        tools:layout="@layout/fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="225dp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment">
+        <ListView
+            android:id="@+id/listView"
+          android:layout_below="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|end"
+            android:id="@+id/fb_image"
+            android:src="@drawable/fb"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="76dp"
+            android:src="@drawable/gp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/gp_image"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="80dp"
+            android:src="@drawable/anwesha"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/website"/>
+</FrameLayout>
+    </RelativeLayout>
