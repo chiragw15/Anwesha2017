@@ -29,8 +29,8 @@ public class Team extends AppCompatActivity {
 
 
 
-        toggle.setDrawerIndicatorEnabled(true);
-
+        toggle.setDrawerIndicatorEnabled(false);
+        toggle.setHomeAsUpIndicator(null);
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new MyNavigationDrawer(this));

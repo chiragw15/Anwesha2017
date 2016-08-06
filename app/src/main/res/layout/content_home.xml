@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".activities.Home"
-    tools:showIn="@layout/app_bar_home">
+    tools:showIn="@layout/app_bar_home"
+    android:orientation="vertical">
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -14,10 +15,12 @@
         android:name="com.example.cc15.anwesha2017.fragments.HomeActivityFragment"
         tools:layout="@layout/fragment_main"
         android:layout_width="match_parent"
-        android:layout_height="225dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
         android:layout_below="@+id/fragment">
         <ListView
             android:id="@+id/listView"
@@ -50,4 +53,4 @@
             android:layout_marginBottom="10dp"
             android:id="@+id/website"/>
 </FrameLayout>
-    </RelativeLayout>
+    </LinearLayout>

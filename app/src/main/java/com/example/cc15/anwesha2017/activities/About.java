@@ -29,7 +29,8 @@ public class About extends AppCompatActivity {
 
 
 
-        toggle.setDrawerIndicatorEnabled(true);
+        toggle.setDrawerIndicatorEnabled(false);
+
 
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
